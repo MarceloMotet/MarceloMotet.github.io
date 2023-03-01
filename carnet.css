@@ -1,0 +1,23 @@
+body {
+    background: url(images/33c74013c1d5b411b3fd61c1f89a9144.jpg);
+    background-size: 80%;
+    font-family: 'Libre Baskerville', serif;
+     }
+
+h1 {
+color: blue;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+    color: red;
+    font-family: 'Franklin Gothic Medium';
+}
+h3 {
+    font-style: italic;
+    font-size:x-large;
+}
+#mi-parrafo {
+    color: green;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+  
