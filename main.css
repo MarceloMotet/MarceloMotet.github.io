@@ -1,15 +1,44 @@
-
-
   /* Estilo del encabezado */
 #header {
     background-color: #1A2B42;
     color: white;
     padding: 20px;
+    
+  }
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #3447ec;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  button {
+    background-color: #ece7e4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
   #body i {
     font-size: 40px;
     margin: 0 18px;
     align-self:auto;
+    
+  }
+  
+  
+  
+  button:hover {
+    background-color: #4565bb;
   }
   
 button {
@@ -27,9 +56,10 @@ cursor: pointer;
 transition: 3s;
 }
 .icon-fa-solid fa-car-side {
-  background: rgb(238, 237, 237);
-
+  background: rgb(243, 9, 9);
 }
+
+
 button span{
   background-color: #111;
   padding: 16px 24px;
@@ -62,13 +92,13 @@ button:hover span{
   
   /* Estilo de la sección de educación */
   #education {
-    background-color: #7FABD2;
+    background-color: #93c6f3;
     color: #333;
   }
   
   /* Estilo de la sección de habilidades */
   #skills {
-    background-color: #B4D7ED;
+    background-color: #095585;
     color: #333;
   }
   
@@ -79,12 +109,13 @@ button:hover span{
     color: #333;
   }
   #herramientas {
-    background-color: #0077B5;
-    color: #7FABD2;
+    background-color: #0f9dfc;
+    color: #034f91;
   }
   #habilidades    
     {
-    background-color: #00DDFF;
+    background-color: #0044ff;
+    
   }
   /* Estilo del pie de página */
   #footer {
