@@ -1,7 +1,9 @@
 body {
     background: url(images/33c74013c1d5b411b3fd61c1f89a9144.jpg);
-    background-size: 80%;
+    background-size: 20%;
     font-family: 'Libre Baskerville', serif;
+    background-repeat: no-repeat;
+    background-size: cover;
      }
 
 h1 {
