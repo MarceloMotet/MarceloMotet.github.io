@@ -1,67 +1,198 @@
+ * {
+    margin: 0;
+    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 90px, 20px, 0;
+    background-color: #be9de4;
+    background-size: 10%;
+    background-repeat:no-repeat;
+    margin: 20;
+    padding: 50;
+   
+  }
   /* Estilo del encabezado */
-#header {
-    background-color: #1A2B42;
-    color: white;
-    padding: 20px;
+  .header { 
+    color: rgb(48, 5, 150);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+ 
+ .alinear_flex {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+ }
+.nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+.logo {
+  font-size: 80px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px;
+}
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px, 12px;
+  border-radius: 3px;
+}
+.nav-menu-link:hover,
+.nav-menu-link_active {
+background-color: #044c72;
+transition: 0,5s;
+}
+.nav-toggle {
+  color: rgb(212, 8, 8);
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  cursor: pointer;
+  line-height: 60px;
+  display: none;
+
+}
+
+@media (max_width: 768px) {
+  body {
+      padding-top: 70px;
+  }
+  .header {
+      height: 6opx;
+  }
+  .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgb(68, 56, 56);
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60%);
+    overflow-y: auto;
+    
+    left: 100%;
+    transition: left  0,3s;
+  }
+
+.nav-menu-item {
+    line-height: 70px;
     
   }
-  body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+      background: none;
+      color: rgb(84, 84, 238);
   }
+  .nav-toggle {
+    display: block;
+    }
+ .nav-menu_visible {
+      left: 0;
+    }
+  .nav-menu-link {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform:capitalize;
+    width: max-content;
+  }
+  .nav-menu-link {
+    padding: 8px, 12px;
+    border-radius: 3px;
+  }
+  .nav-menu-link:hover {
+  background-color: #0077B5;
+  transition: 0,5s;
+  }
+  .nav-toggle {
+    display: block;
+  }
+} 
+  .nav-menu_visible {
+        left: 0;
+    }
+   .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+   }
+
   
   h1 {
-    color: #3447ec;
+    color: #edf0e0;
     text-align: center;
+    font-size: 2.1rem;
+    font-family:'Rubik Iso';
   }
   
   p {
+    color: #f5f1f1;
     font-size: 1.2rem;
     line-height: 1.5;
+    font-family: 'Rubik Iso'
   }
-  
-  button {
-    background-color: #ece7e4;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  #body i {
-    font-size: 40px;
-    margin: 0 18px;
-    align-self:auto;
-    
-  }
-  
-  
-  
+     
   button:hover {
-    background-color: #4565bb;
+    background-color: #6308f5;
   }
   
 button {
 border: 0;
 background-image: linear-gradient(150deg,
- #9500ff,
- #09f,
- #00DDFF);
-border-radius: 6px;
-color: #fff;
+ #eae9eb,
+ rgb(207, 6, 6),
+ #f1f6f7);
+border-radius: 10px;
+color: #e91607;
 display: flex;
 font-size: 18px;
 padding: 4px;
 cursor: pointer;
 transition: 3s;
+font-family:'Rubik Iso'
 }
 .icon-fa-solid fa-car-side {
-  background: rgb(243, 9, 9);
+  background: rgb(241, 3, 3);
 }
 
 
 button span{
-  background-color: #111;
+  background-color: none;
   padding: 16px 24px;
   border-radius: 6px;
   transition: .3s;
@@ -77,27 +208,32 @@ button:hover span{
   
   /* Estilo de las secciones */
   .section {
-    background-color: #F5F5F5;
-    border: 1px solid #ccc;
+    background-color: #2df07ef5;
+    border: 1px solid #806f6f;
     padding: 20px;
     margin-top: 30px;
+    font-family: 'Gloock', serif;
+  }
+  
+  #datos personales {
+    background-color: #512df0f5;
   }
   
   /* Estilo de la sección de experiencia */
-  #experience {
-    background-color: #4D648D;
-    color: white;
+  #experiencia {
+    background-color: #f74141;
+    color: rgb(10, 12, 0);
 
   }
   
   /* Estilo de la sección de educación */
-  #education {
-    background-color: #93c6f3;
+  #educación {
+    background-color: #c6f393;
     color: #333;
   }
   
   /* Estilo de la sección de habilidades */
-  #skills {
+  #habilidades {
     background-color: #095585;
     color: #333;
   }
@@ -105,21 +241,20 @@ button:hover span{
   
   /* Estilo de la sección de habilidades */
   #idiomas {
-    background-color: #0b74eb;
-    color: #333;
+    background-color: #d0d6dd;
+    color: #0a0a0a;
+    font-family: 'Source Serif Pro', serif;
   }
   #herramientas {
-    background-color: #0f9dfc;
-    color: #034f91;
+    background-color: #0a90f0;
+    color: #050391;
   }
-  #habilidades    
-    {
-    background-color: #0044ff;
+ 
     
-  }
+  
   /* Estilo del pie de página */
   #footer {
-    background-color: #08298f;
+    background-color: #47088f;
     color: #333;
     padding: 20px;
     text-align: center;
